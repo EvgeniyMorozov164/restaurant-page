@@ -9,16 +9,30 @@
   --scd-clr: black;
   --main-bg-clr: black;
   --scd-bg-clr: rgb(235, 60, 47);
+
+  color: var(--main-clr);
+  background-color: var(--main-bg-clr); 
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
+ /* HEADER STYLES */
+
 .header {
+  width: 100%;
+  height: 50px;
   padding: 1rem;
   background: var(--scd-bg-clr);
+  color: var(--scd-clr);
 }
 
 .logo {
@@ -47,4 +61,11 @@
   cursor: pointer;
   background-color: orange;
   color: var(--main-clr);
+}
+
+/* MAIN STYLES */
+
+.main {
+  justify-content: center;
+  align-items: center;
 }
