@@ -145,3 +145,16 @@ body {
 .menu-item-price {
   text-align: end;
 }
+
+/* Contacts section */
+
+.contacts {
+  height: 90vh;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: orange;
+}
