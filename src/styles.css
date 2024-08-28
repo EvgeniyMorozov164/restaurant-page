@@ -3,3 +3,48 @@
   src: url("./Pixelify.ttf");
 }
 
+:root {
+  font-family: "Pixelify", sans-serif;
+  --main-clr: white;
+  --scd-clr: black;
+  --main-bg-clr: black;
+  --scd-bg-clr: rgb(235, 60, 47);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 1rem;
+  background: var(--scd-bg-clr);
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.rest-name {
+  font-size: 2rem;
+}
+
+.nav {
+  gap: 10px;
+}
+
+.button {
+  font-family: "Pixelify";
+  border: none;
+  padding: 5px 10px;
+  width: 100px;
+  background-color: var(--scd-bg-clr);
+  font-size: 1rem;
+  transition: all .3s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: orange;
+  color: var(--main-clr);
+}
