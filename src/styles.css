@@ -17,6 +17,7 @@
 body {
   width: 100%;
   min-height: 100vh;
+  
 }
 
 .flex {
@@ -65,7 +66,47 @@ body {
 
 /* MAIN STYLES */
 
-.main {
-  justify-content: center;
+.main {    
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 100%;
+  height: auto;  
+  padding: 1rem;
+}
+
+.welcome {
+  width: 100%;
+  height: 600px;  
+  margin-top: 0;  
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 100px;
+}
+
+.hi {
+  font-size: 2.5rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.pic-like {
+  background-color: var(--scd-bg-clr);
+  color: var(--scd-clr);
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+  height: 300px;
+}
+
+.about-us {
+  font-size: 2.5rem;
 }
