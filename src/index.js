@@ -1,5 +1,13 @@
 import "./Pixelify.ttf";
 import "./reset.css";
 import "./styles.css";
+import { renderHomePage } from "./home";
 
-console.log("Hello from WebPack!");
+document.addEventListener("DOMContentLoaded", renderHomePage);
+
+const homeBtn = document.querySelector("#home");
+
+homeBtn.addEventListener("click", renderHomePage);
+
+
+
