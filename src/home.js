@@ -1,8 +1,3 @@
-import "./Pixelify.ttf";
-import "./reset.css";
-import "./styles.css";
-
-
 const renderHomePage = () => {
   const content = document.querySelector("#content");
   content.innerHTML = "";

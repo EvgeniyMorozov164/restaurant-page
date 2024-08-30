@@ -1,7 +1,3 @@
-// import "./Pixelify.ttf";
-// import "./reset.css";
-// import "./styles.css";
-
 class Food {
   constructor(name, price) {    
     this.name = name;
