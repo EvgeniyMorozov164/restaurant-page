@@ -49,25 +49,26 @@ const createSection = (parent, name) => {
   section.appendChild(sectionName);
 };
 
-const createMenuElement = (parent, item, price) => {
+const createMenuElement = (parent,item, price) => {
   const menuItem = document.createElement("div");
   menuItem.classList.add("menu-item");
+
   const menuItemName = document.createElement("div");
   menuItemName.classList.add("menu-item-name");
+  
   const menuItemText = document.createElement("p");
   menuItemText.textContent = `${item}`;
-
-  parent.appendChild(menuItem);
-  menuItem.appendChild(menuItemName);
-  menuItemName.appendChild(menuItemText);
 
   const itemPrice = document.createElement("div");
   itemPrice.classList.add("menu-item-price");
   const priceValue = document.createElement("p");
   priceValue.textContent = `${price}`;
-  
-  parent.appendChild(itemPrice);
   itemPrice.appendChild(priceValue);
+  menuItem.appendChild(menuItemName);
+  menuItemName.appendChild(menuItemText);  
+  parent.appendChild(menuItem);
+  menuItem.appendChild(itemPrice);
+  
 };
 
 const renderMenuPage = () => {  
